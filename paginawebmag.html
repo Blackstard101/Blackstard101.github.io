@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Multimedia</title>
+    <style>
+        /* Estilos previos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Cambiado a un color de fondo semi-transparente */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .media {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .media-item {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+            max-width: 300px;
+        }
+        video, audio {
+            width: 100%;
+            border-radius: 8px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .media-item p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        /* Nuevos estilos */
+        body {
+            background-image: url('imagen.png'); /* Agregamos la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container::after {
+            content: 'Juan Andrés Revollo'; /* Agregamos tu nombre */
+            display: block;
+            text-align: right;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.8); /* Cambiamos el color del texto para que sea visible sobre la imagen de fondo */
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        /* Resto de los estilos */
+        h1 {
+            color: #fff; /* Cambiamos el color del título para que sea visible sobre la imagen de fondo */
+            margin-top: 40px;
+        }
+
+        .media-item {
+            background-color: rgba(255, 255, 255, 0.9); /* Cambiamos el color de fondo de los elementos */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .media-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Página Multimedia</h1>
+        
+        <div class="media">
+            <div class="media-item">
+                <h2>Video</h2>
+                <video controls preload="metadata">
+                    <source src="video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <p>Disfruta de nuestro video corto</p>
+            </div>
+
+            <div class="media-item">
+                <h2>Audio</h2>
+                <audio controls preload="metadata">
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <p>Escucha nuestro audio relajante</p>
+            </div>
+
+            <div class="media-item">
+                <h2>Animación</h2>
+                <img src="disenoweb.gif" alt="Animación">
+                <p>Observa nuestra animación</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
