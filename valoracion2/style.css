@@ -1,0 +1,28 @@
+.frame {
+    position: fixed;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  #marco1 {
+    left: 0;
+    border:solid red;
+    color:green;
+  }
+  
+  #marco2 {
+    left: 33%;
+    border: solid black;
+    color: blue;
+  }
+  
+  #marco3 {
+    right: 0;
+    border: solid red;
+
+  }
+  
